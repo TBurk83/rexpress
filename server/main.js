@@ -4,7 +4,7 @@ var app = new express();
 
 app
     .get('/', function(req, res) {
-        res.render('./../client/index.ejs', {})
+        res.render('./../app/index.ejs', {});
     })
-    .use(express.static(__dirname + '/../client'))
-    .listen('7777');
+    .use(express.static(__dirname + '/../.tmp'))
+    .listen('2435');
