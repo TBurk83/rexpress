@@ -16,8 +16,12 @@
     "express": "^4.13.3",
     "gulp": "^3.9.0",
     "gulp-live-server": "0.0.29",
+<<<<<<< HEAD
     "react": "^0.14.7",
     "react-dom": "^0.14.7",
+=======
+    "react": "^0.14.3",
+>>>>>>> f0a72e09233d66a3591b66fb5eee7f58b3c62df8
     "reactify": "^1.1.1",
     "vinyl-source-stream": "^1.1.0"
   }
