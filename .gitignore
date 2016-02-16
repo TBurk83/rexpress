@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 node_modules
 bower_components
+.temp
 =======
 # Logs
 logs

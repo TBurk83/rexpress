@@ -1,19 +1,21 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
-var action = require('./../actions/GroceryListActionCreator.jsx');
+var action = require('./../actions/GroceryItemActionCreator.jsx');
 
 module.exports = React.createClass({
-    getInitialState() {
+    getInitialState: function() {
         return {
-            input:""
+            input: ""
         };
     },
     handleInputName: function(e) {
-        this.setState({input : e.target.value});
+        this.setState({
+            input: e.target.value
+        });
     },
-    addItem:function(e) {
+    addItem: function(e) {
         e.preventDefault();
-        // console.log("Adding Item!", this.state.input);
+        console.log("Adding Item!", this.state.input);
 
         action.add({
             name: this.state.input
@@ -24,13 +26,17 @@ module.exports = React.createClass({
         });
     },
     render: function() {
-        return (
-            <div className='grocery-addItem'>
-                <form onSubmit={this.addItem}>
-                    <input value={this.state.input} onChange={this.handleInputName} />
-                    <button>Add Item</button>
-                </form>
-            </div>
+        return ( < div className = 'grocery-addItem' >
+            < form onSubmit = {
+                this.addItem
+            } >
+            < input value = {
+                this.state.input
+            }
+            onChange = {
+                this.handleInputName
+            }
+            /> < button > Add Item < /button> < /form> < /div>
         )
     }
 })
