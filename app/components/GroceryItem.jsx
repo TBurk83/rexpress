@@ -20,8 +20,8 @@ module.exports = React.createClass({
     },
     render: function() {
         return (
-            <div>
-                <div>
+            <div className="grovery-item row">
+                <div className="six columns">
                     <h4 className={this.props.item.purchased ? "strikethrough" : ""}>
                         {this.props.item.name}
                     </h4>

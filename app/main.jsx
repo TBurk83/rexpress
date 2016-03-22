@@ -14,8 +14,6 @@ function render() {
 groceryItemStore.onChange(function(items) {
 	initial = items;
 	render();
-
-	console.log('onChange');
 });
 
 render();
